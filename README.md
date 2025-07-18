@@ -32,5 +32,3 @@
 
 - GitHub - [Lodin03](https://github.com/Lodin03)
 - LinkedIn - [Lars Odin Tveit Moen](https://www.linkedin.com/in/lars-odin-tveit-moen-736600260/)
-
-# article-preview
