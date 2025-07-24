@@ -1,49 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
   <script defer src="main.js"></script>
-  
+
   <title>Article preview component</title>
-  
 </head>
+
 <body>
   <main>
-    <div class="article-container">
+    <article class="article-container">
       <div class="article-container__box">
-        <img src="images/drawers.jpg" alt="Drawers Image" class="article-container__img">
+        <img
+          src="images/drawers.jpg"
+          alt="Green drawers with decorative items on top"
+          class="article-container__img"
+        />
+
         <div class="article-container__content">
-          <h1 class="article-container__title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
-          <p class="article-container__text">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
+          <h1 class="article-container__title">
+            Shift the overall look and feel by adding these wonderful touches to furniture in your home
+          </h1>
+
+          <p class="article-container__text">
+            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.
+          </p>
+
           <div class="article-container__profile">
-            <img src="images/avatar-michelle.jpg" alt="Avatar Michelle" class="article-container__profile-img">
+            <img
+              src="images/avatar-michelle.jpg"
+              alt="Michelle Appleton"
+              class="article-container__profile-img"
+            />
+
             <div class="article-container__profile-info">
               <p class="article-container__profile-info__name">Michelle Appleton</p>
               <p class="article-container__profile-info__date">28 Jun 2020</p>
             </div>
-            <img src="images/icon-share.svg" alt="Share icon" class="article-container__profile-share" id="share-btn">
-            <div class="article-container__share-options" id="share-options" style="display: none;">
+
+            <button
+              id="share-btn"
+              class="article-container__profile-share"
+              aria-label="Share this article"
+              aria-expanded="false"
+              aria-controls="share-options"
+            >
+              <img
+                src="images/icon-share.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </button>
+
+            <!-- Share Options -->
+            <div
+              class="article-container__share-options"
+              id="share-options"
+              style="display: none;"
+            >
               <span class="article-container__share-options__label">SHARE</span>
-              <a href="https://facebook.com" target="_blank" rel="noopener" class="article-container__share-options__link">
-                <img src="images/icon-facebook.svg" alt="Facebook" class="article-container__share-options__icon">
+
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener"
+                class="article-container__share-options__link"
+                aria-label="Share on Facebook"
+              >
+                <img
+                  src="images/icon-facebook.svg"
+                  alt=""
+                  class="article-container__share-options__icon"
+                  aria-hidden="true"
+                />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener" class="article-container__share-options__link">
-                <img src="images/icon-twitter.svg" alt="Twitter" class="article-container__share-options__icon">
+
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener"
+                class="article-container__share-options__link"
+                aria-label="Share on Twitter"
+              >
+                <img
+                  src="images/icon-twitter.svg"
+                  alt=""
+                  class="article-container__share-options__icon"
+                  aria-hidden="true"
+                />
               </a>
-              <a href="https://pinterest.com" target="_blank" rel="noopener" class="article-container__share-options__link">
-                <img src="images/icon-pinterest.svg" alt="Pinterest" class="article-container__share-options__icon">
+
+              <a
+                href="https://pinterest.com"
+                target="_blank"
+                rel="noopener"
+                class="article-container__share-options__link"
+                aria-label="Share on Pinterest"
+              >
+                <img
+                  src="images/icon-pinterest.svg"
+                  alt=""
+                  class="article-container__share-options__icon"
+                  aria-hidden="true"
+                />
               </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </article>
   </main>
 </body>
 </html>
-
